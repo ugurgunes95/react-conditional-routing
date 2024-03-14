@@ -275,4 +275,4 @@ Now it's time to create routing part. As I said before I like to keep files sepe
 
 That's it. I am not exactly sure if this approach is convenient, but I am pretty sure that I'll use it in my next projects. Hope it helps you people.
 
-[Github Repo](https://)
+[Github Repo](https://github.com/ugurgunes95/react-conditional-routing)
