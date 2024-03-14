@@ -271,6 +271,25 @@ Now it's time to create routing part. As I said before I like to keep files sepe
 
 - This way we're also make Login route not accessible if user is logged in.
 
+### Configure Our Main.ts File
+
+- We need to apply those to our app:
+
+  ```javascript
+  // main.tsx
+  import ReactDOM from "react-dom/client";
+  import "./index.css";
+  import { AuthContextProvider } from "./context/AuthContext.tsx";
+  import RoutingProvider from "./routing/BaseRouting.tsx";
+
+  ReactDOM.createRoot(document.getElementById("root")!).render(
+    <AuthContextProvider>
+      <RoutingProvider />
+    </AuthContextProvider>,
+  );
+
+  ```
+
 ## Conclusion
 
 That's it. I am not exactly sure if this approach is convenient, but I am pretty sure that I'll use it in my next projects. Hope it helps you people.
